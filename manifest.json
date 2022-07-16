@@ -1,0 +1,25 @@
+{
+    "name": "TwitterScreensaver",
+    "description": "TwitterScreensaver",
+    "version": "1.0.0",
+    "manifest_version": 3,
+    "action": {
+        "default_popup": "html/popup.html"
+    },
+    "permissions": [
+        "storage"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "https://twitter.com/*"
+            ],
+            "js": [
+                "js/TwitterScreensaver.js"
+            ],
+            "css": [
+                "css/TwitterScreensaver.css"
+            ]
+        }
+    ]
+}
