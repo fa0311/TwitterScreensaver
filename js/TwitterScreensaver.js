@@ -8,6 +8,7 @@ class TwitterScreensaver {
       this.onclick();
     });
     document.addEventListener("click", () => this.onclick());
+    document.addEventListener("wheel", () => this.onclick());
   }
   onclick() {
     if (this.time == undefined) return;
